@@ -1,0 +1,6 @@
+vosk==0.3.45
+PyAudio==0.2.14
+PyAutoGUI==0.9.54
+PyGetWindow==0.0.9
+keyboard==0.13.5
+pyinstaller==6.4.0
