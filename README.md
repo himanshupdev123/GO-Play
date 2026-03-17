@@ -45,57 +45,17 @@ Install Dependencies: Install all required libraries in one go:
  ```bash
 pip install -r requirements.txt
 
-Test the Code: You don't need to build the .exe to test your changes. Just run the raw Python script:
- ```bash
-python voice_assistant.py
 
-Gemini said
-That is exactly the mindset of a great open-source developer! Thinking about how other programmers will interact with your code is what takes a project to the next level.
-
-To answer your question: Yes, you absolutely need a requirements.txt file. When another student downloads your raw Python code, their computer won't know which libraries you used. If they just try to run voice_assistant.py, their terminal will light up with red "ModuleNotFoundError" messages. The requirements.txt acts as a grocery list so they can install everything in one click.
-
-Here is how to set up your repo for collaborators, starting with that file.
-
-Step 1: Create the requirements.txt
-You can either ask Python to generate this automatically, or just create a new text file named requirements.txt in your project folder and paste this clean list into it:
-
-Plaintext
-vosk==0.3.45
-PyAudio==0.2.14
-PyAutoGUI==0.9.54
-PyGetWindow==0.0.9
-keyboard==0.13.5
-pyinstaller==6.4.0
-(Note: I included keyboard assuming you added that Ctrl+Alt+Q kill switch!)
-
-Step 2: Add "For Developers" instructions to the README
-Contributors need to know how to test the code without compiling it into an .exe every single time.
-
-Add this new section to the bottom of your README.md file:
-
-Markdown
-## 🤝 For Developers & Contributors
-Want to add new features, like Mac support or new voice commands? We'd love your help! 
-
-### Local Setup Instructions
-1. **Fork & Clone:** Fork this repository and clone it to your local machine.
-2. **Virtual Environment:** Create a fresh Python environment so you don't clutter your system:
-   ```bash
-   python -m venv env
-   env\Scripts\activate  # On Windows
-Install Dependencies: Install all required libraries in one go:
-
-Bash
-pip install -r requirements.txt
 Test the Code: You don't need to build the .exe to test your changes. Just run the raw Python script:
 
-Bash
+```bash
 python voice_assistant.py
+
 How to Contribute
 Create a new branch for your feature (git checkout -b feature/NewCommand).
 
 Commit your changes.
 
 Push to the branch and open a Pull Request. Please describe exactly what your code changes or fixes!
-
+python voice_assistant.py
 
